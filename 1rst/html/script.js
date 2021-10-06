@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded", () => document.getElementById("thanks__message").innerText = localStorage.getItem('name'));

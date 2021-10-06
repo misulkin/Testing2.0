@@ -1,0 +1,413 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+.wrapper {
+  width: 100%;
+  max-width: 600px;
+  min-width: 240px;
+  height: 600px;
+  background-color: #80B0B4;
+  color: #3A3A3A;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0 auto;
+}
+
+.wrapper .promo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper .promo h1 {
+  text-align: center;
+  font-size: 36px;
+  padding: 5% 0;
+  font-weight: 600;
+}
+
+.wrapper .promo p {
+  font-size: 24px;
+  text-align: center;
+  font-weight: 500;
+  margin: 0 10%;
+}
+
+.wrapper .promo p span {
+  color: #24656B;
+}
+
+.wrapper .promo form {
+  margin: 30px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.wrapper .promo form .mail {
+  margin: 3% auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.wrapper .promo form .mail #email {
+  margin: 15px;
+  font-size: 30px;
+  display: block;
+  border-bottom: 3px solid #24656B;
+  width: 50%;
+  background-color: transparent;
+  color: #0e2b2e;
+}
+
+.wrapper .promo form .mail #email::-webkit-input-placeholder {
+  color: #24656B;
+}
+
+.wrapper .promo form .mail #email:-ms-input-placeholder {
+  color: #24656B;
+}
+
+.wrapper .promo form .mail #email::-ms-input-placeholder {
+  color: #24656B;
+}
+
+.wrapper .promo form .mail #email::placeholder {
+  color: #24656B;
+}
+
+.wrapper .promo form .mail #name {
+  margin: 15px;
+  font-size: 30px;
+  display: block;
+  background-color: transparent;
+  width: 35%;
+  border-bottom: 3px solid #24656B;
+  color: #0e2b2e;
+}
+
+.wrapper .promo form .mail #name::-webkit-input-placeholder {
+  color: #24656B;
+}
+
+.wrapper .promo form .mail #name:-ms-input-placeholder {
+  color: #24656B;
+}
+
+.wrapper .promo form .mail #name::-ms-input-placeholder {
+  color: #24656B;
+}
+
+.wrapper .promo form .mail #name::placeholder {
+  color: #24656B;
+}
+
+.wrapper .promo form .accepted {
+  margin: 10px 10%;
+  position: relative;
+}
+
+.wrapper .promo form .accepted #accepted__checkbox {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  position: absolute;
+}
+
+.wrapper .promo form .accepted #accepted__label {
+  font-size: 12px;
+  display: block;
+  padding-left: 50px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  position: relative;
+}
+
+.wrapper .promo form .accepted #accepted__label:before {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 40px;
+  border: 3px solid #24656B;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.wrapper .promo form .accepted #accepted__label:after {
+  content: "\2713";
+  display: block;
+  font-size: 40px;
+  color: #24656B;
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 5px;
+}
+
+.wrapper .promo form .accepted #accepted__checkbox:checked + #accepted__label::after {
+  opacity: 1;
+}
+
+.wrapper .promo form .buttonlink {
+  margin: 5% auto;
+}
+
+.wrapper .promo form .buttonlink button {
+  font-size: 42px;
+  padding: 5px 40px;
+  background-color: #24656B;
+  color: white;
+}
+
+@media screen and (max-width: 300px) {
+  .wrapper {
+    width: 100%;
+    max-width: 600px;
+    min-width: 240px;
+    height: 600px;
+    background-color: #80B0B4;
+    color: #3A3A3A;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0 auto;
+  }
+  .wrapper .promo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .wrapper .promo h1 {
+    text-align: center;
+    font-size: 36px;
+    padding: 5% 0;
+    font-weight: 600;
+  }
+  .wrapper .promo p {
+    font-size: 24px;
+    text-align: center;
+    font-weight: 500;
+    margin: 0 10%;
+  }
+  .wrapper .promo p span {
+    color: #24656B;
+  }
+  .wrapper .promo form {
+    margin: 5px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .wrapper .promo form .mail {
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .wrapper .promo form .mail #email {
+    margin: 5px auto;
+    font-size: 22px;
+    display: block;
+    width: 80%;
+  }
+  .wrapper .promo form .mail #name {
+    margin: 5px auto;
+    font-size: 22px;
+    display: block;
+    width: 80%;
+  }
+  .wrapper .promo form .accepted {
+    margin: 10px 10%;
+    position: relative;
+  }
+  .wrapper .promo form .accepted #accepted__checkbox {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    position: absolute;
+  }
+  .wrapper .promo form .accepted #accepted__label {
+    font-size: 12px;
+    display: block;
+    padding-left: 50px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    position: relative;
+  }
+  .wrapper .promo form .accepted #accepted__label:before {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 40px;
+    border: 3px solid #24656B;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .wrapper .promo form .accepted #accepted__label:after {
+    content: "\2713";
+    display: block;
+    font-size: 40px;
+    color: #24656B;
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 5px;
+  }
+  .wrapper .promo form .accepted #accepted__checkbox:checked + #accepted__label::after {
+    opacity: 1;
+  }
+}
+
+button {
+  margin: 5% auto;
+  font-size: 42px;
+  padding: 5px 40px;
+  background-color: #24656B;
+  color: white;
+}
+
+.disactive {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+.thanks {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.thanks__p {
+  text-transform: uppercase;
+  font-size: 46px;
+  font-weight: 600;
+  padding: 16% 0;
+}
+
+.thanks__p #thanks__message {
+  text-decoration: underline;
+}
+
+.thanks__text {
+  font-size: 34px;
+  font-weight: 500;
+  padding: 0 10%;
+}
+/*# sourceMappingURL=main.css.map */

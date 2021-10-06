@@ -1,0 +1,25 @@
+.thanks {
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+
+
+.thanks__p {
+
+    text-transform: uppercase;
+    font-size: 46px;
+    font-weight: 600;
+    padding: 16% 0;
+
+    #thanks__message {
+        text-decoration: underline;
+    }
+}
+
+.thanks__text {
+    font-size: 34px;
+    font-weight: 500;
+    padding: 0 10%;
+}
